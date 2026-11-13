@@ -17,3 +17,9 @@ Official public landing site for **XIRAEN (XIRA Expert Network)** at **https://x
 XIRAEN currently offers social Stream, a single-model AI assistant with consent/quota controls, and XIRA Energy as nontransferable internal service credits. Multi-model AI verification and the wider XIRA Expert Network are **future vision**, not live verified functionality. No fake testimonials, user statistics, investment claims, or unverified partnerships are used.
 
 The main project remains in the private `xirraen/xiraen` repository. Public copy is based on the engineering README, `VISI_XIRAEN.md`, and `docs/XIRA-ENERGY.md` as inspected on 13 November 2026.
+
+## Living experience — November 2026
+
+The active branch-root website now includes an animated conceptual intelligence network, a product exploration switcher for **Stream, AI Assistant and XIRA Energy**, editorial feature rail, scroll reveals, and optional pointer depth. The matching Next.js component is `site/components/Experience.tsx`. The reference was TON.org's clear information hierarchy and presentation, not TON branding, code, assets, or blockchain functionality. The site does not claim partnership with TON or implement its wallet features.
+
+Accessibility: buttons retain `aria-pressed`; JavaScript only updates safe text fields. Motion respects reduced-motion settings and skips pointer effects on touch devices. No fabricated blockchain statistics, token pricing, partner logos, or investor claims are used.
