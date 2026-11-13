@@ -10,6 +10,7 @@ export const project = {
 
 export const navigation = [
   { label: "Platform", href: "#platform" },
+  { label: "Experience", href: "#experience" },
   { label: "Pengalaman", href: "#pengalaman" },
   { label: "Visi", href: "#visi" },
   { label: "Transparansi", href: "#transparansi" },
