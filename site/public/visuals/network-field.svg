@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050" fill="none" role="img" aria-labelledby="title desc"><title id="title">XIRAEN abstract intelligence network</title><desc id="desc">A minimal geometric network, connected nodes and dark orbital forms with a violet center.</desc>
+<defs><linearGradient id="board" x1="80" y1="0" x2="1160" y2="1050" gradientUnits="userSpaceOnUse"><stop stop-color="#1B1A28"/><stop offset=".55" stop-color="#101017"/><stop offset="1" stop-color="#171824"/></linearGradient><linearGradient id="ring" x1="200" y1="200" x2="990" y2="890" gradientUnits="userSpaceOnUse"><stop stop-color="#7C5CFF" stop-opacity=".7"/><stop offset="1" stop-color="#5EE7F5" stop-opacity=".35"/></linearGradient><radialGradient id="halo"><stop stop-color="#7C5CFF" stop-opacity=".19"/><stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/></radialGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="#F4F5F7" stroke-opacity=".04"/></pattern></defs>
+<rect x="1" y="1" width="1198" height="1048" rx="34" fill="url(#board)" stroke="#30303D" stroke-width="2"/>
+<rect x="1" y="1" width="1198" height="1048" rx="34" fill="url(#grid)"/>
+<ellipse cx="620" cy="524" rx="445" ry="420" fill="url(#halo)"/>
+<g opacity=".72" stroke="url(#ring)" stroke-width="1.5"><circle cx="615" cy="526" r="184"/><circle cx="615" cy="526" r="296" stroke-dasharray="4 13"/><circle cx="615" cy="526" r="402" stroke-opacity=".42"/></g>
+<g stroke="#9B9AFF" stroke-opacity=".42" stroke-width="2"><path d="M465 371 615 526 863 371M615 526 417 717M615 526 834 741"/><path d="M465 371 417 717M863 371 834 741" stroke-dasharray="5 12"/></g>
+<g fill="#11111B" stroke="#5B5775" stroke-width="2"><rect x="402" y="308" width="126" height="126" rx="30"/><rect x="800" y="309" width="126" height="126" rx="30"/><rect x="351" y="658" width="126" height="126" rx="30"/><rect x="777" y="679" width="126" height="126" rx="30"/></g>
+<g stroke="#C3B8FF" stroke-width="4" stroke-linecap="round"><circle cx="463" cy="367" r="21"/><path d="M428 409c0-15 15-25 35-25s35 10 35 25"/><path d="m844 338 13 34 34 13-34 13-13 34-13-34-34-13 34-13z"/><path d="m396 752 32-53-3 31h33l-39 42 2-27z"/><circle cx="840" cy="739" r="21"/><path d="M820 739h40M840 719v40"/></g>
+<circle cx="615" cy="526" r="107" fill="#171624" stroke="#7265AC" stroke-width="3"/>
+<circle cx="615" cy="526" r="88" stroke="#7C5CFF" stroke-opacity=".35" stroke-width="2"/>
+<path d="M551 471h34l30 40 30-40h34l-43 55 43 55h-34l-30-40-30 40h-34l42-55z" fill="#BCACFF"/>
+<g fill="#5EE7F5"><circle cx="726" cy="269" r="8"/><circle cx="377" cy="516" r="6"/><circle cx="930" cy="618" r="6"/></g>
+<g fill="#9BA1AC" font-family="Arial,sans-serif" font-size="20" letter-spacing="4"><text x="64" y="73">XIRA / CONNECTED INTELLIGENCE</text><text x="64" y="985">HUMAN + AI / CONCEPT STUDY</text><text x="1059" y="985">001</text></g>
+</svg>
