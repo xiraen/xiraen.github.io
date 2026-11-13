@@ -69,3 +69,13 @@ Current: Telegram Mini App Stream social, opt-in single-model assistant with quo
 - Next.js self-hosts fonts at build time. No third-party font requests at runtime.
 - No fabricated testimonial or metric. The `Testimonials` component renders verifiable product facts.
 - A **sub-2-second mobile page load is a target, not an independently measured result**. Run mobile Lighthouse and device QA on the actual deployed release before reporting a pass.
+
+## Living explorer and motion
+
+The optional interactive explorer is in `components/Experience.tsx`, its styles are in `app/globals.css`, and content is labeled as a **conceptual preview** rather than a live application screenshot. The published branch-root equivalent is in `../index.html`, `../styles.css`, and `../script.js`. Both versions share the same three product pillars and avoid misleading TON/web3 coin claims.
+
+Motion includes restrained orbital rotation, a soft floating hero image, a selectable experience preview and scroll reveal. Animations use CSS transforms/opacity and Framer Motion; `prefers-reduced-motion` disables ambient loops. The interactive preview changes text and glyphs without network requests.
+
+## Checks
+
+From the repository root run `node --check script.js` and `node --test tests/landing-contract.test.mjs`. From `site/` run `npm run check`. The GitHub Actions workflow executes the static contract tests and Next.js TypeScript/export build before merge.

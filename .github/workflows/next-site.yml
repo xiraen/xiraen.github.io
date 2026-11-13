@@ -4,11 +4,19 @@ on:
   pull_request:
     paths:
       - 'site/**'
+      - 'tests/**'
+      - 'index.html'
+      - 'styles.css'
+      - 'script.js'
       - '.github/workflows/next-site.yml'
   push:
     branches: [main]
     paths:
       - 'site/**'
+      - 'tests/**'
+      - 'index.html'
+      - 'styles.css'
+      - 'script.js'
       - '.github/workflows/next-site.yml'
   workflow_dispatch:
 
@@ -31,6 +39,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate public landing contract and JavaScript syntax
+        run: |
+          node --check ../script.js
+          node --test ../tests/landing-contract.test.mjs
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: TypeScript check
