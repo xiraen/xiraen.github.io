@@ -1,0 +1,60 @@
+name: Next.js landing — validate and optionally deploy
+
+on:
+  pull_request:
+    paths:
+      - 'site/**'
+      - '.github/workflows/next-site.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/next-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: xiraen-next-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate Next.js static export
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: TypeScript check
+        run: npm run typecheck
+      - name: Build static site
+        run: npm run build
+      - name: Ensure exported entry exists
+        run: test -f out/index.html
+      - name: Upload Pages artifact (manual production rollout only)
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site/out
+
+  deploy:
+    name: Publish static export to GitHub Pages
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://xiraen.github.io/
+    steps:
+      - uses: actions/deploy-pages@v4

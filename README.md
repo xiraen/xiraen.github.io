@@ -1,30 +1,19 @@
 # XIRAEN — Public Website
 
-Official public landing page for **XIRAEN (XIRA Expert Network)**, maintained in the `xiraen` GitHub organization.
+Official public landing site for **XIRAEN (XIRA Expert Network)** at **https://xiraen.github.io/**.
 
-**Website:** https://xiraen.github.io/  
-**Telegram bot:** https://t.me/xiraenbot  
-**Telegram Mini App (web entry):** https://xiraen-mini-app.xiraen.workers.dev/
+**Current GitHub Pages branch-root site:** `index.html`, `styles.css`, `script.js`, and `favicon.svg`. This site stays live during the Next.js migration.
 
-## Purpose
+**New design source:** [`site/`](site/README.md) — Next.js 16 + TypeScript + Tailwind CSS v4 + Framer Motion. Deep Space Neon palette and Space Grotesk/Inter typography. The Next.js design is staged separately and must pass build verification before being deployed.
 
-Explain the XIRAEN product and its long-term direction accurately to public visitors. The currently available XIRAEN experience is a Telegram Mini App combining:
+**Deployment safety:** See [`site/README.md`](site/README.md) for GitHub Pages source switch to GitHub Actions, manual deploy, acceptance testing, and removal of superseded branch-root files. Do not change publishing source or remove the existing static page until the replacement is ready.
 
-- **Stream:** a social feed with profiles, posts, replies and following.
-- **AI:** a native single-model assistant with consent and quota controls.
-- **XIRA Energy:** internal non-transferable service credits, **not** cryptocurrency.
+**Telegram:** https://t.me/xiraenbot  
+**Mini App:** https://xiraen-mini-app.xiraen.workers.dev/  
+**Organization:** https://github.com/xiraen
 
-The idea of routing one question to multiple specialist AI agents, independently checking their results, and returning one verified response is **a product vision, not a production capability**. The multi-model network, automated fact verification and paid AI metering must not be presented as live.
+## Public statements
 
-## Implementation
+XIRAEN currently offers social Stream, a single-model AI assistant with consent/quota controls, and XIRA Energy as nontransferable internal service credits. Multi-model AI verification and the wider XIRA Expert Network are **future vision**, not live verified functionality. No fake testimonials, user statistics, investment claims, or unverified partnerships are used.
 
-- Static, dependency-free GitHub Pages website: `index.html`, `styles.css`, `script.js`, and `favicon.svg`.
-- Responsive design, keyboard navigation, reduced-motion support, accessible mobile navigation, Open Graph metadata and basic search engine metadata.
-- No analytics, cookies, external scripts, build dependencies, or user data collection in this repository.
-- All product references are based on the main XIRAEN project's `README.md`, `VISI_XIRAEN.md`, and `docs/XIRA-ENERGY.md` as inspected on 13 November 2026.
-
-## Publishing
-
-This repository is named `xiraen.github.io` and GitHub reports Pages enabled. The intended publishing location is https://xiraen.github.io/ . When editing from GitHub, confirm **Settings → Pages** publishes the root of the `main` branch and verify the successful deployment before describing the site as live.
-
-No build step is needed. Edit `index.html` directly and commit to the publishing branch. Keep descriptions of roadmap features separate from verified live capabilities.
+The main project remains in the private `xirraen/xiraen` repository. Public copy is based on the engineering README, `VISI_XIRAEN.md`, and `docs/XIRA-ENERGY.md` as inspected on 13 November 2026.
