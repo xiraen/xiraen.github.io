@@ -18,7 +18,7 @@ The idea of routing one question to multiple specialist AI agents, independently
 
 ## Implementation
 
-- Static, dependency-free GitHub Pages website: `index.html` and `favicon.svg`.
+- Static, dependency-free GitHub Pages website: `index.html`, `styles.css`, `script.js`, and `favicon.svg`.
 - Responsive design, keyboard navigation, reduced-motion support, accessible mobile navigation, Open Graph metadata and basic search engine metadata.
 - No analytics, cookies, external scripts, build dependencies, or user data collection in this repository.
 - All product references are based on the main XIRAEN project's `README.md`, `VISI_XIRAEN.md`, and `docs/XIRA-ENERGY.md` as inspected on 13 November 2026.
