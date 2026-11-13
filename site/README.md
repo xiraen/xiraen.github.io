@@ -20,9 +20,10 @@ Visit http://localhost:3000.
 cd site
 npm run typecheck
 npm run build
+npm run start
 ```
 
-Next.js uses `output: "export"`, so the generated static site appears in `site/out/`. The included `next/image` visuals use local SVG assets and `images.unoptimized`, compatible with static GitHub Pages output.
+Next.js uses `output: "export"`, so the generated static site appears in `site/out/`. `npm run start` serves that export on http://localhost:3000 after a successful build. The included `next/image` visuals use local SVG assets and `images.unoptimized`, compatible with static GitHub Pages output.
 
 ## Where to edit
 
